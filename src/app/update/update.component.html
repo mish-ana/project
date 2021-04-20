@@ -1,0 +1,19 @@
+<form class="form" style="text-align: center;" (ngSubmit)="editProduct()">
+    <div class="form-row">
+
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault02"> post1 </label>
+            <input type="text" class="form-control" name="p_name" [(ngModel)]="productItem.servicename" id="validationDefault02" placeholder="Last name" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefaultUsername">post 2</label>
+            <div class="input-group">
+
+                <input type="text" class="form-control" id="validationDefaultUsername" name="p_service" [(ngModel)]="productItem.serviceservice" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>

@@ -1,0 +1,26 @@
+<form class="form" #userLogin="ngForm" (ngSubmit)="checkpass()">
+    <div class="block">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="user" name="uname" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <!-- <small class="text-danger" [class.d-none]="email.valid || email.touched">Enter valid email</small> -->
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="pass" name="password" minlength="6" required>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <br>
+        <br>
+        <small id="emailHelp" class="form-text text-muted">Enter valid form of email and crct password</small>
+        <button class="btn btn-primary" (click)="checkpass();" [disabled]="userLogin.form.invalid">Submit</button>
+        <br>
+        <br>
+        <small id="emailHelp" class="form-text text-muted">Dont have an account?.</small>
+        <button type="submit" (click)="btnClick();" class="btn btn-primary">Signup</button>
+    </div>
+</form>

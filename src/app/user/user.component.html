@@ -1,0 +1,68 @@
+<!-- <div class="form-group">
+    <label for="exampleFormControlTextarea1">Large textarea</label>
+    <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+  </div>
+   -->
+<form class="form" (ngSubmit)="AddProduct()">
+    <div class="form-group">
+        <label for="exampleFormControlTextarea2" class="head">ENTER YOUR POST FOR GROUP1 </label>
+        <br>
+        <br>
+        <textarea class="form-control rounded-0 " [(ngModel)]="grp1" name="p_name" [(ngModel)]="productItem.servicename" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea2" class="head">ENTER YOUR POST FOR GROUP 2 </label>
+        <br>
+        <br>
+        <textarea class="form-control rounded-0 " [(ngModel)]="grp2" name="p_service" [(ngModel)]="productItem.serviceservice" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="button" (click)="clear();" type="submit" class="btn btn-secondary">SUMBIT</button>
+    </div>
+</form>
+<!-- table -->
+
+<div class='card'>
+    <div class='card-header'>
+
+    </div>
+
+    <div class='card-body'>
+        <div class='table-responsive'>
+            <table class='table bg-pic' *ngIf='products && products.length'>
+                <thead>
+                    <tr>
+                        <!-- <th> -->
+                        <!-- <button class='btn btn-primary'
+                (click)='toggleImage()'>
+                  {{showImage? 'Hide' : 'Show'}} Image
+                </button> -->
+                        <!-- </th> -->
+                        <th>post 1</th>
+                        <th>post2</th>
+
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr *ngFor='let product of products'>
+
+                        <td>{{ product.servicename }}</td>
+                        <td>{{ product.serviceservice }}</td>
+
+                        <td>
+                            <button class="btn btn-warning" style="cursor:pointer" (click)="editProduct(product)" style="margin-left: 20px;"> Edit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" style="cursor:pointer" (click)="deleteProduct(product)"> Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>

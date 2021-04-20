@@ -1,0 +1,49 @@
+<form class="form" (ngSubmit)="AddPass()">
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" name="p_firstname" [(ngModel)]="passItem.servicefirstname" id="validationDefault01" placeholder="First name" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" name="p_lastname" [(ngModel)]="passItem.servicelastname" id="validationDefault02" placeholder="Last name" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefaultUsername">Email</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationDefaultUsername" name="p_user" [(ngModel)]="passItem.serviceuser" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Password</label>
+            <input type="password" class="form-control" id="validationDefault03" name="p_pass" [(ngModel)]="passItem.servicepass" [(ngModel)]="servicepass" placeholder="Password" minlength="6" required>
+            <label class="form-check-label" for="invalidCheck2">
+                pass length should be at least 6
+                  </label>
+        </div>
+
+
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Confirm Password</label>
+            <input type="password" class="form-control" id="validationDefault04" name="p_confpass" [(ngModel)]="confpass" placeholder="Confirm Password" required>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Phone Number</label>
+            <input type="number" class="form-control" id="validationDefault05" name="p_phonenumber" [(ngModel)]="passItem.servicephonenumber" placeholder="Phone Number" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
