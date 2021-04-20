@@ -1,1 +1,387 @@
-<!-- <div class="heading"><h1>Service at click</h1><div class="responsive"><div class="gallery"><a target="_blank" href="img_5terre.jpg"><img src="assets/gardener.jpg" alt="Cinque Terre" width="600" height="400"></a><div class="desc">Gardener we know that knowdays if you have to maintain your lawn <br>you need a gardener for doing that job so you can simply visit the sit and hire a gardener. </div></div></div><div class="responsive"><div class="gallery"><a target="_blank" href="img_forest.jpg"><img src="assets/electrician.jpg" alt="Forest" width="600" height="400"></a><div class="desc">Well Electricians are one of the most commonly needed person <br>just visit the site and hire</div></div></div><div class="responsive"><div class="gallery"><a target="_blank" href="img_lights.jpg"><img src="assets/plumber.jpg" alt="Northern Lights" width="600" height="400"></a><div class="desc">Hard to find a plumber dont worry just create a account and just hire worker near <br>at cheaper rates </div></div></div><div class="responsive"><div class="gallery"><a target="_blank" href="img_mountains.jpg"><img src="assets/carpenter.webp" alt="Mountains" width="600" height="400"></a><div class="desc">Dont just get stuck on a specific worker. <br>Hire a cheaper worker just by click and get a work done accurately by the given time </div></div></div><div class="clearfix"></div><div style="padding:6px;"><p>These are the some of the services that our site provides there are many more create a acoount to know more </p><p></p></div></div>--><main class="main"><section class="glass"><div class="dashboard"><div class="user"><img src="" alt="" /><h3>Service Provider Site </h3><p></p></div><div class="links"><div class="link"><img src="" alt="" /><h2>Services</h2></div><!-- <div class="link"><img src="" alt="" /><h2>Games</h2></div>--><!-- <div class="link"><img src="" alt="" /><h2>To J</h2></div>--><!-- <div class="link"><img src="" alt="" /><h2>Library</h2></div>--></div><div class="pro"><h2>Join for services.</h2><img src="" alt="" /></div></div><div class="games"><div class="status"><h1>Some of the services</h1></div><div class="cards"><div class="card"><img src="assets/gardener.jpg" alt="" id="pic" /><div class="card-info"><h2>Gardener</h2><p>Hire by just creating a account</p><div class="progress"></div></div><h2 class="percentage">Rating 60%</h2></div><div class="card"><img src="assets/electrician.jpg" alt="" id="pic" /><div class="card-info"><h2>Electrician</h2><p>Hire by just creating a account</p><div class="progress"></div></div><h2 class="percentage">Rating 70%</h2></div><div class="card"><img src="assets/carpenter.webp" alt="" id="pic" /><div class="card-info"><h2>Carpenter</h2><p>Hire by just creating a account</p><div class="progress"></div></div><h2 class="percentage">Rating 73%</h2></div><div class="card"><img src="assets/plumber.jpg" alt="" id="pic" /><div class="card-info"><h2>Plumber</h2><p>Hire by just creating a account</p><div class="progress"></div></div><h2 class="percentage">Rating 60%</h2></div><div class="card"><div class="card-info"><h2>To Know More </h2><p>Click on Services at top</p></div></div></div></div></section></main><div class="circle1"></div><div class="circle2"></div>
+/* .heading {
+    display: flexbox;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* .gallery:hover {
+    -ms-transform: scale(1.);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+} */
+
+
+/* 
+.gallery:hover {
+    position: relative;
+}
+
+.gallery::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.gallery:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(244, 212, 124);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient( to right bottom, rgb(190, 190, 190), rgb(68, 68, 68));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin-top: 5%;
+    opacity: 0.85;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0rem 2rem;
+}
+
+.games {
+    flex: 2;
+}
+
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.pro img {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+
+.pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* GAMES */
+
+.status {
+    margin-bottom: 3rem;
+}
+
+
+/* .status input {
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), black);
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+} */
+
+.games {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient( to left top, rgb(244, 212, 124), rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pic {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    /* make a square container */
+    width: 110px;
+    height: 110px;
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+    /* center the image vertically and horizontally */
+    background-position: top center;
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+    position: relative;
+    right: 2%;
+}
+
+
+/* @media only screen and (max-width: 500px) {
+    .glass,
+    .dashboard,
+    .user,
+    .links,
+    .link .pro,
+    .games,
+    .status,
+    .cards,
+    .card,
+    .percentage,
+    .progress,
+    .card-info {
+        width: 70%;
+    }
+} */
+
+@media only screen and (max-width: 700px) {
+    .glass,
+    .main,
+    .dashboard,
+    .user,
+    .users,
+    .game,
+    .status,
+    .cards,
+    .card,
+    .second,
+    .progress,
+    .percentage,
+    .card-info {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+
+/* @media only screen and (max-width: 700px) {
+    .glass,
+    .main,
+    .dashboard,
+    .user,
+    .users,
+    .game,
+    .status,
+    .cards,
+    .card,
+    .second,
+    .progress,
+    .percentage,
+    .card-info,
+    .circle1,
+    .circle2 {
+        width: 100%;
+    }
+} */
+
+@media only screen and (max-width: 700px) {
+    .glass,
+    .main,
+    .dashboard,
+    .user,
+    .users,
+    .game,
+    .status,
+    .cards,
+    .card,
+    .second,
+    .progress,
+    .percentage,
+    .card-info,
+    .circle1,
+    .circle2 {
+        width: 100%;
+    }
+}
